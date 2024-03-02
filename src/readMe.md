@@ -15,16 +15,10 @@
    - The duration (e.g., "2 hours," "short-term") reflects how long the impact lasts.
    - It's a general estimate based on typical digestion and metabolic processes.
 
-   Certainly! Let's create a modified Satiety Index Score that incorporates both the insulin spike and the duration of satiety. We'll aim for a higher score when the insulin spike is low, and the duration of fullness is longer. The scale will range from 0 to 1000, where 0 represents the shortest time before hunger, and 1000 represents the longest time before natural hunger occurs.
 
-Here's the updated formula for our custom Satiety Index Score:
 
-\[ \text{Satiety Index Score} = \frac{{\text{Duration (minutes)} \times (1000 - \text{Insulin Spike Score})}}{1000} \]
 
-- **Duration**: The time in minutes before hunger returns.
-- **Insulin Spike Score**: A value representing the impact on insulin levels (lower values indicate a smaller spike).
-
-Now let's calculate the modified Satiety Index Scores for the foods we've discussed:
+# Satiety Index Scores for the foods we've discussed:
 
 1. **Apple**:
    - Duration: 120 minutes
@@ -52,6 +46,13 @@ This expression calculates a relative score based on the duration (30 minutes) a
 
 
 Let's break down the expression (For those who are not faint of heart):
+Here's the formula for a Satiety Index Score:
+
+\[ \text{Satiety Index Score} = \frac{{\text{Duration (minutes)} \times (1000 - \text{Insulin Spike Score})}}{1000} \]
+
+- **Duration**: The time in minutes before hunger returns.
+
+- **Insulin Spike Score**: A value representing the impact on insulin levels (lower values indicate a smaller spike).
 
 1. **\(1000 - 950\)**:
    - This part calculates the difference between 1000 and 950.
