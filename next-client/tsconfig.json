@@ -1,0 +1,58 @@
+{
+  // Compiler options for TypeScript
+  "compilerOptions": {
+    // List of built-in libraries to include
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // Allow JavaScript files to be compiled
+    "allowJs": true,
+
+    // Skip type checking of all declaration files
+    "skipLibCheck": true,
+
+    // Enable strict type-checking
+    "strict": true,
+
+    // Don't emit any output files during compilation
+    "noEmit": true,
+
+    // Allow interoperability between CommonJS and ES Modules
+    "esModuleInterop": true,
+
+    // Module system to use
+    "module": "esnext",
+
+    // Specify how TypeScript resolves module names
+    "moduleResolution": "bundler",
+
+    // Enable importing JSON modules directly
+    "resolveJsonModule": true,
+
+    // Allow JavaScript files to be used in isolation
+    "isolatedModules": true,
+
+    // Specify the JSX target
+    "jsx": "preserve",
+
+    // Enable incremental compilation
+    "incremental": true,
+
+    // Plugins used by TypeScript
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    // Map paths to different locations
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  // Specify files to include in compilation
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+
+  // Specify files to exclude from compilation
+  "exclude": ["node_modules"]
+}
