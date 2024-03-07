@@ -1,4 +1,5 @@
 export interface FoodImpact {
+  name: string;
   hunger: number;
   bloodSugar: number;
   insulin: number;
