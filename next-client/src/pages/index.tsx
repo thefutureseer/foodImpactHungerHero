@@ -1,20 +1,21 @@
 import { useState, useEffect } from 'react';
+import { FoodData, FoodImpact } from '@/lib/interfaces/FoodImpact';
 
 export default function Home() {
-  const [foodData, setFoodData] = useState({});
-  const [selectedFood, setSelectedFood] = useState(null);
+  const [foodData, setFoodData] = useState<FoodData>({});
+  const [selectedFood, setSelectedFood] = useState<FoodImpact | null>(null);
 
   useEffect(() => {
     // Fetch food data from the API endpoint
     const fetchFoodData = async () => {
       try {
-        const response = await fetch('/api/food/food');
+        const response = await fetch('/api/food');
         if (!response.ok) {
           throw new Error('Failed to fetch food data');
         }
         const data = await response.json();
         setFoodData(data);
-      } catch (error) {
+      } catch (error: any) {
         console.error('Error fetching food data:', error.message);
       }
     };
@@ -22,7 +23,7 @@ export default function Home() {
     fetchFoodData();
   }, []);
 
-  const handleFoodClick = (foodName) => {
+  const handleFoodClick = (foodName: any) => {
     console.log("Clicked on food:", foodName , " & ", foodData[foodName]);
     setSelectedFood(foodData[foodName]);
   };

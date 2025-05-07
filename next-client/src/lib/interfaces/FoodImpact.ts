@@ -7,3 +7,7 @@ export interface FoodImpact {
   duration: string;
   SatietyIndexScore: number;
 }
+
+export interface FoodData {
+  [key: string]: FoodImpact;
+}

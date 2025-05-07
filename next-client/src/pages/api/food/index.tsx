@@ -75,7 +75,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
     // Return the foodData as JSON
     res.status(200).json(foodData);
-  } catch (error) {
+  } catch (error: any) {
     // Handle errors
     console.error("Error fetching food data:", error.message);
     res.status(500).json({ error: "Internal Server Error" });

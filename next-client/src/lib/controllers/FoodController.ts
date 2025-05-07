@@ -1,6 +1,6 @@
 // Import the necessary modules and interfaces
 import { NextApiRequest, NextApiResponse } from 'next';
-import FoodModel from '../../../lib/models/FoodModel';
+import FoodModel from '@/lib/models/FoodModels';
 import { FoodImpact } from '../interfaces/FoodImpact';
 
 // Define the controller class
