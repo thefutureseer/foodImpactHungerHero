@@ -1,5 +1,7 @@
 # Consuming certain foods can lead to increased hunger or a feeling of being unsatisfied for a few days at a time. Here are some foods that might contribute to prolonged hunger:
 
+## Coming soon! What food brings down cortisol level because if cortisol is too high then you cant fall asleep! If the insulin or blood sugar is coming down from a spike you can't sleep! We have the fix..
+
 1. **Ultra-Processed Foods**:
    - Ultra-processed foods, such as pastries, white bread, packaged meals, and fast foods, tend to lack essential nutrients.
    - These foods are often high in unhealthy fats and refined carbohydrates, which can leave you feeling hungry again soon after a meal³.
