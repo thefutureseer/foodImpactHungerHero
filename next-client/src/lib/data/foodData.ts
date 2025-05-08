@@ -1,104 +1,114 @@
 const foodData = {
-    "apple": {
-      "name": "Apple",
-      "hunger": 200,
-      "bloodSugar": 300,
-      "insulin": 100,
-      "spikeScore": 500,
-      "duration": "2 hours",
-      "SatietyIndexScore": 60,
-      "helpLowerCortisol": false
-    },
-    "chocolate": {
-      "name": "Chocolate",
-      "hunger": 800,
-      "bloodSugar": 700,
-      "insulin": 900,
-      "spikeScore": 950,
-      "duration": "3 hours",
-      "SatietyIndexScore": 0,
-      "helpLowerCortisol": true
-    },
-    "cinnamon": {
-      "name": "Cinnamon",
-      "hunger": 100,
-      "bloodSugar": 300,
-      "insulin": 100,
-      "spikeScore": 300,
-      "duration": "2 hours",
-      "SatietyIndexScore": 84,
-      "helpLowerCortisol": true
-    },
-    "paprika": {
-      "name": "Paprika",
-      "hunger": 700,
-      "bloodSugar": 500,
-      "insulin": 100,
-      "spikeScore": 800,
-      "duration": "short-term",
-      "SatietyIndexScore": 24,
-      "helpLowerCortisol": false
-    },
-    "oatmeal": {
-      "name": "Oatmeal", 
-      "hunger": 300, 
-      "bloodSugar": 400, 
-      "insulin": 200, 
-      "spikeScore": 600, 
-      "duration": "2 hours", 
-      "SatietyIndexScore": 80,
-      "helpLowerCortisol": true
-    },
-    "brownPasta": {
-      "name": "Brown Pasta",
-      "hunger": 250, 
-      "bloodSugar": 350, 
-      "insulin": 150, 
-      "spikeScore": 450, 
-      "duration": "2 hours",
-      "SatietyIndexScore": 70,
-      "helpLowerCortisol": false
-    },
-    "preservatives": {
-      "name": "Preservatives",
-      "hunger": 800,
-      "bloodSugar": 700,
-      "insulin": 900,
-      "spikeScore": 950,
-      "duration": "short-term",
-      "SatietyIndexScore": 14,
-      "helpLowerCortisol": false
-    },
-    "darkChocolate": {
-      "name": "Dark Chocolate",
-      "hunger": 500,
-      "bloodSugar": 400,
-      "insulin": 300,
-      "spikeScore": 650,
-      "duration": "3 hours",
-      "SatietyIndexScore": 40,
-      "helpLowerCortisol": true
-    },
-    "greenTea": {
-      "name": "Green Tea",
-      "hunger": 100,
-      "bloodSugar": 200,
-      "insulin": 50,
-      "spikeScore": 200,
-      "duration": "1 hour",
-      "SatietyIndexScore": 50,
-      "helpLowerCortisol": true
-    },
-    "salmon": {
-      "name": "Salmon",
-      "hunger": 50,
-      "bloodSugar": 150,
-      "insulin": 80,
-      "spikeScore": 180,
-      "duration": "4 hours",
-      "SatietyIndexScore": 90,
-      "helpLowerCortisol": true
-    }
+  "apple": {
+    "name": "Apple",
+    "causesHunger": 200,
+    "bloodSugarSpike": 300,
+    "insulinSpike": 150,
+    "spikeScore": 500,
+    "SatietyIndexScore": 72,
+    "helpLowerCortisol": 150,
+    "description": "Single whole food item, commonly eaten raw or cooked.",
+    "measurement": "1 medium apple (~180g)"
+  },
+  "darkChocolate": {
+    "name": "Dark Chocolate",
+    "causesHunger": 450,
+    "bloodSugarSpike": 350,
+    "insulinSpike": 250,
+    "spikeScore": 600,
+    "SatietyIndexScore": 50,
+    "helpLowerCortisol": 1000,
+    "description": "Processed blend of cocoa, sugar, and fats.",
+    "measurement": "40g (~4 small squares)"
+  },
+  "chocolate": {
+    "name": "Chocolate",
+    "causesHunger": 800,
+    "bloodSugarSpike": 700,
+    "insulinSpike": 900,
+    "spikeScore": 950,
+    "SatietyIndexScore": 10,
+    "helpLowerCortisol": 600,
+    "description": "Highly processed mix of dairy, sugar, and cocoa.",
+    "measurement": "50g (~5 small squares or 1 mini bar)"
+  },
+  "cinnamon": {
+    "name": "Cinnamon",
+    "causesHunger": 100,
+    "bloodSugarSpike": 250,
+    "insulinSpike": 120,
+    "spikeScore": 300,
+    "SatietyIndexScore": 86,
+    "helpLowerCortisol": 870,
+    "description": "Single spice derived from tree bark.",
+    "measurement": "1 teaspoon (~2g)"
+  },
+  "paprika": {
+    "name": "Paprika",
+    "causesHunger": 700,
+    "bloodSugarSpike": 450,
+    "insulinSpike": 200,
+    "spikeScore": 800,
+    "SatietyIndexScore": 40,
+    "helpLowerCortisol": 50,
+    "description": "Single spice made from dried peppers.",
+    "measurement": "1 teaspoon (~2g)"
+  },
+  "oatmeal": {
+    "name": "Oatmeal", 
+    "causesHunger": 250, 
+    "bloodSugarSpike": 350, 
+    "insulinSpike": 180, 
+    "spikeScore": 500, 
+    "SatietyIndexScore": 88,
+    "helpLowerCortisol": 920,
+    "description": "Rolled oats with possible additives like fruit or milk.",
+    "measurement": "1 cup cooked (~250g)"
+  },
+  "brownPasta": {
+    "name": "Brown Pasta",
+    "causesHunger": 280, 
+    "bloodSugarSpike": 300, 
+    "insulinSpike": 160, 
+    "spikeScore": 420, 
+    "SatietyIndexScore": 75,
+    "helpLowerCortisol": 120,
+    "description": "Whole wheat flour-based processed food.",
+    "measurement": "1 cup cooked (~200g)"
+  },
+  "preservatives": {
+    "name": "Preservatives",
+    "causesHunger": 850,
+    "bloodSugarSpike": 750,
+    "insulinSpike": 950,
+    "spikeScore": 980,
+    "SatietyIndexScore": 20,
+    "helpLowerCortisol": 5,
+    "description": "Artificial food additive composed of multiple chemicals.",
+    "measurement": "Varies by food—typically 5-10% of processed items"
+  },
+  "greenTea": {
+    "name": "Green Tea",
+    "causesHunger": 80,
+    "bloodSugarSpike": 150,
+    "insulinSpike": 70,
+    "spikeScore": 180,
+    "SatietyIndexScore": 60,
+    "helpLowerCortisol": 970,
+    "description": "Single whole food item derived from tea leaves.",
+    "measurement": "1 cup brewed (~240ml)"
+  },
+  "salmon": {
+    "name": "Salmon",
+    "causesHunger": 40,
+    "bloodSugarSpike": 120,
+    "insulinSpike": 90,
+    "spikeScore": 150,
+    "SatietyIndexScore": 94,
+    "helpLowerCortisol": 980,
+    "description": "Single whole food item, rich in Omega-3.",
+    "measurement": "150g (~1 filet)"
+  }
 };
 
 export default foodData;

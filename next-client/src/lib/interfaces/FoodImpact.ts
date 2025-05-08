@@ -1,11 +1,13 @@
 export interface FoodImpact {
   name: string;
-  hunger: number;
-  bloodSugar: number;
-  insulin: number;
+  causesHunger: number;
+  bloodSugarSpike: number;
+  insulinSpike: number;
   spikeScore: number;
-  duration: string;
   SatietyIndexScore: number;
+  helpLowerCortisol: number;
+  description: string;
+  measurement: string;
 }
 
 export interface FoodData {
