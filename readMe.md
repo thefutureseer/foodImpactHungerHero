@@ -2,6 +2,12 @@
 
 ## Coming soon! What food brings down cortisol level because if cortisol is too high then you cant fall asleep! If the insulin or blood sugar is coming down from a spike you can't sleep! We have the fix..
 
+- Most Satiating Foods: Foods high in protein, fiber, and water tend to keep people full longer. Some top contenders include egg whites, spinach, Greek yogurt, asparagus, turkey breast, shrimp, salmon, and cottage cheese.
+
+- Foods That Increase Hunger: Highly processed foods, refined carbs, and sugary items can cause rapid blood sugar spikes and crashes, leading to increased hunger. Examples include white bread, pastries, sugary cereals, and processed snacks.
+
+- Foods That Lower Cortisol: Nutrient-dense foods rich in antioxidants and healthy fats can help regulate stress hormones. Some great options include dark chocolate, legumes, lentils, green tea, whole grains, and fruits and vegetables.
+
 1. **Ultra-Processed Foods**:
    - Ultra-processed foods, such as pastries, white bread, packaged meals, and fast foods, tend to lack essential nutrients.
    - These foods are often high in unhealthy fats and refined carbohydrates, which can leave you feeling hungry again soon after a meal³.
